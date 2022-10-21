@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "a08c70cc-02fe-4d6f-b1b7-8b7f4ca0bbe5",
+		"name": "spring-boot-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5424797"
+	},
+	"item": [
+		{
+			"name": "/v1/hello-world/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9000/v1/hello-world/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"hello-world",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/hello-world/name?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9000/v1/hello-world/name?name=Francisco",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"hello-world",
+						"name"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Francisco"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/country/find-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9000/v1/country/find-all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"country",
+						"find-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/country/find/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9000/v1/country/find/capital/Ottawa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"country",
+						"find",
+						"capital",
+						"Ottawa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/country/find/capital",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:9000/v1/country/find?id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"country",
+						"find"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/v1/country/save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 6,\n        \"name\": \"Chile\",\n        \"capital\": \"Santiago\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9000/v1/country/save",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"country",
+						"save"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
